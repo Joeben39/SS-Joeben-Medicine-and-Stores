@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  marging: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  background: rgb(151, 32, 52);
+}
+.container .joe {
+  display: flex;
+  height: 100%;
+}
+.container .joe-content1 {
+  width: 42%;
+  height: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgb(151, 32, 52);
+  font-family: sans-serif;
+}
+.container .joe-content1 h1 {
+  font-size: 48px;
+}
+.container .joe-content1 p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+.container .joe-content1 .button {
+  padding: 15px 64px;
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-top: 10%;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+.container .joe-content1 .button:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+.container .joe-content2 {
+  width: 58%;
+  height: 100%;
+  position: relative;
+}
+.container .joe-content2 img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.container .joe-content2 img:hover {
+  transform: scale(1.1);
+}
+.container .joe-content2::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 100%;
+  background: rgb(151, 32, 52);
+  top: 0;
+  left: 0;
+  clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+}
+.container a {
+  margin-left: 50px;
+  text-decoration: none;
+  color: #111;
+}/*# sourceMappingURL=ifunanya.css.map */
